@@ -1,5 +1,5 @@
 <%= @products.each do |product| %>
   <h2><%= Product.name %></h2>
   <div><%= truncate product.description %></div>
-  <button class="js-more" data-id="<"></button>
+  <button class="js-more" data-id="<%= product.id %>"></button>
 <% end %>
